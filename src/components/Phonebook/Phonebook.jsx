@@ -4,7 +4,7 @@ import FormAddContact from "../FormAddContact/FormAddContact";
 import SearchFilter from "../SearchFilter/SearchFilter";
 
 const Phonebook = () => {
-    const [contacts, setContacts] = useState(undefined || []);
+    const [contacts, setContacts] = useState(JSON.parse(window.localStorage.getItem('userInfo')) || []);
     const [filter, setFilter] = useState('');
 
 
