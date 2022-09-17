@@ -1,11 +1,10 @@
-import React from "react"
+import React, {useState, useEffect} from "react"
 import { nanoid } from 'nanoid';
 import FormAddContact from "../FormAddContact/FormAddContact";
 import SearchFilter from "../SearchFilter/SearchFilter";
 
 
 class Phonebook extends React.Component {
-
 
     constructor() {
         super();
@@ -82,7 +81,6 @@ class Phonebook extends React.Component {
 
 
     render() {
-        console.log(this.state)
         const {filter, contacts} = this.state
         return <div>
                 <h1>PhoneBook</h1>
@@ -99,6 +97,8 @@ class Phonebook extends React.Component {
 
 
 export default Phonebook
+
+
 
 
 
