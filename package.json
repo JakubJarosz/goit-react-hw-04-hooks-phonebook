@@ -1,6 +1,6 @@
 {
-  "name": "goit-react-hw-03-phonebook",
-  "homepage": "https://jakubjarosz.github.io/goit-react-hw-03-phonebook/",
+  "name": "goit-react-hw-04-hooks-phonebook",
+  "homepage": "https://jakubjarosz.github.io/goit-react-hw-04-hooks-phonebook/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
