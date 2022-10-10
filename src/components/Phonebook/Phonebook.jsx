@@ -63,6 +63,14 @@ const Phonebook = () => {
         console.log(localStorage)
     }, [contacts])
 
+    const checkUndefined = (el) => {
+        if (el === undefined) {
+            return []
+        } else {
+            return el
+        }
+    }
+
     return (
         <div>
             <h1>PhoneBook</h1>
@@ -71,7 +79,7 @@ const Phonebook = () => {
             <h2>Contacts</h2>
             <SearchFilter onFilterChange={filterContacts} />
             <ul>
-                {renderContacts(filter, contacts)}
+                {renderContacts(filter, checkUndefined(contacts))}
             </ul>
         </div>
     );
